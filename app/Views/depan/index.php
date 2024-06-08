@@ -22,7 +22,7 @@
               <h4>Selamat datang di website resmi Puskesmas Kuok</h4>
               <p>
                 Puji syukur kita panjatkan kehadirat Allah Subhana wa Ta’ala, berkat rahmat dan karunia-Nya UPT Puskesmas Kuok pada akhirnya berhasil Website UPT Puskesmas Kuok. Saya menyambut gembira hadirnya Website UPT Puskesmas Ini untuk merespon tingginya kebutuhan akan data dan informasi sebagai landasan pengambilan keputusan yang evidence-based.
-                <a href="">Baca Selengkapnya ...</a>
+                <a href="/sambutan">Baca Selengkapnya ...</a>
               </p>
               <p class="text-primary"><b>Kepala Puskesmas Kuok</b></p>
               <p><b>Rita Anggraini</b></p>
@@ -138,7 +138,7 @@
           <div class="icon">
             <i class="fas fa-heartbeat"></i>
           </div>
-          <a href="#" class="stretched-link">
+          <a href="/rj" class="stretched-link">
             <h3>Rawat Jalan</h3>
           </a>
           <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>

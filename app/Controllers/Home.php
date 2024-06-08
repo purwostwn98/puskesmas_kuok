@@ -13,4 +13,12 @@ class Home extends BaseController
     {
         return view('depan/profil');
     }
+    public function v_sambutan(): string
+    {
+        return view('depan/sambutan');
+    }
+    public function v_rawat_jalan(): string
+    {
+        return view('depan/service_rawat_jalan');
+    }
 }
