@@ -108,7 +108,7 @@
         <div class="branding d-flex align-items-center">
 
             <div class="container position-relative d-flex align-items-center justify-content-between">
-                <a href="index.html" class=" d-flex align-items-center me-auto">
+                <a href="/" class=" d-flex align-items-center me-auto">
                     <!-- Uncomment the line below if you also wish to use an image logo -->
                     <img style="height: 50px; margin-right: 3px;" src="<?= base_url(); ?>/gambar/logo_kampar.png" alt="">
                     <img style="height: 50px;" src="<?= base_url(); ?>/gambar/logo_puskesmas.png" alt="">
@@ -117,11 +117,11 @@
 
                 <nav id="navmenu" class="navmenu">
                     <ul>
-                        <li><a href="#hero" class="active">Home<br></a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#departments">Visi Misi</a></li>
-                        <li><a href="#doctors">Struktur</a></li>
+                        <li><a href="/#hero" class="active">Home<br></a></li>
+                        <li><a href="/#about">About</a></li>
+                        <li><a href="/#services">Services</a></li>
+                        <li><a href="/#departments">Visi Misi</a></li>
+                        <li><a href="/#doctors">Struktur</a></li>
                     </ul>
                     <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
                 </nav>
@@ -159,11 +159,11 @@
                 <div class="col-lg-2 col-md-3 footer-links">
                     <h4>Useful Links</h4>
                     <ul>
-                        <li><a href="#hero" class="active">Home<br></a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#departments">Visi Misi</a></li>
-                        <li><a href="#doctors">Struktur</a></li>
+                        <li><a href="/#hero" class="active">Home<br></a></li>
+                        <li><a href="/#about">About</a></li>
+                        <li><a href="/#services">Services</a></li>
+                        <li><a href="/#departments">Visi Misi</a></li>
+                        <li><a href="/#doctors">Struktur</a></li>
                     </ul>
                 </div>
 
