@@ -10,23 +10,20 @@
           <h1 class="text-center">Sambutan</h1>
         </div>
         <div class="col-md-3">
-          <p class="text-center"><img style="width: 50%;" src="<?= base_url(); ?>/gambar/rita.jpg" alt=""></p>
+          <p class="text-center"><img style="width: 65%;" src="<?= base_url(); ?>/gambar/rita.jpg" alt=""></p>
         </div>
         <div class="col-md-9">
-          <p class="mb-0">Puji syukur kita panjatkan kehadirat Allah Subhana wa Ta’ala, berkat rahmat dan karunia-Nya UPT Puskesmas Kuok pada akhirnya berhasil Website UPT Puskesmas Kuok. Saya menyambut gembira hadirnya Website UPT Puskesmas Ini untuk merespon tingginya kebutuhan akan data dan informasi sebagai landasan pengambilan keputusan yang evidence-based. . </p>
+          <p class="mb-0" style="text-align: justify; text-indent: 2em;">Puji syukur kita panjatkan kehadirat Allah Subhana wa Ta’ala, berkat rahmat dan karunia-Nya UPT Puskesmas Kuok pada akhirnya berhasil Website UPT Puskesmas Kuok. Saya menyambut gembira hadirnya Website UPT Puskesmas Ini untuk merespon tingginya kebutuhan akan data dan informasi sebagai landasan pengambilan keputusan yang evidence-based.</p>
+          <p class="mb-0" style="text-align: justify; text-indent: 2em;">Kami menyadari bukan hal mudah untuk dapat menyajikan data yang berkualitas sesuai kebutuhan dan tepat waktu. Pemenuhan kelengkapan data baik dari segi cakupan wilayah maupun indikator merupakan masalah utama yang ditemui dalam rangka penyusunan yang tepat waktu. Selain itu dalam menyusun Website UPT Puskesmas Kuok ini diperlukan komitmen bersama antara semua Penanggung Jawab Program maupun pihak lain di Kecamatan Kuok dalam mewujudkan penyediaan data yang lengkap, akurat dan tepat waktu.</p>
         </div>
-        <p class="mb-0">Puji syukur kita panjatkan kehadirat Allah Subhana wa Ta’ala, berkat rahmat dan karunia-Nya UPT Puskesmas Kuok pada akhirnya berhasil Website UPT Puskesmas Kuok. Saya menyambut gembira hadirnya Website UPT Puskesmas Ini untuk merespon tingginya kebutuhan akan data dan informasi sebagai landasan pengambilan keputusan yang evidence-based. . </p>
-        <br>
-        <p class="mb-0">UPT Puskesmas Kuok awalnya dibangun sesuai standar puskesmas non rawat satu lantai pada tahun 1983 - 1984 yang kemudian mengalami renovasi dan penambahan gedung. Kemudian dijadikan Puskesmas Rawat Inap dan Puskesmas PONED dengan Izin Operasional Puskesmas Nomor : 440 – 423/V/2022.</p>
-        <br>
-        <p class="text-center">Izin operasional terbaru yang merupakan perubahan dari izin operasional Nomor 440-873/XII/2019 dengan masa belaku hingga 31 Desember 2024, dan sehubungan adanya perubahan nama Puskesmas berdasarkan Keputusan Bupati Kampar Nomor : 440.409/V/2022 tentang perubahan nama Puskesmas perlu di sesuaikan Izin Operasional Unit Pelayanan Teknis Puskesmas. Berdasarkan pertimbangan tersebut Bupati Kampar mencabut Keputusan Bupati Kampar Nomor : 440-873/XII/2019 Tentang Izin Operasional Puskesmas Kuok.</p>
-        <p class="text-center"><img style="width: 50%;" src="<?= base_url(); ?>/gambar/hero.jpg" alt=""></p>
+        <div class="col-md-12">
+          <p class="mb-0" style="text-align: justify; text-indent: 2em;">UPT Puskesmas Kuok telah melakukan banyak upaya agar data dan informasi yang disajikan pada Website UPT Puskesmas Kuok dapat tepat waktu. Saya sangat berharap dengan hadirnya Website UPT Puskesmas Kuok Tahun 2023 ini, kebutuhan terhadap data dan informasi kesehatan di semua lini, baik institusi Pemerintah, institusi swasta, organisasi profesi, mahasiswa dan kelompok masyarakat lainnya dapat terpenuhi dengan baik. Website UPT Puskesmas Kuok ini juga diharapkan dapat bermanfaat sebagai bahan dalam mengukur kinerja program pembangunan kesehatan di Kecamatan Kuok.</p>
+          <p class="mb-0" style="text-align: justify; text-indent: 2em;">Melalui kesempatan ini saya mengucapkan terima kasih dan apresiasi yang setinggi-tingginya kepada semua pihak, dalam hal ini pengelola data dan program, serta lintas sektor yang telah berkontribusi dalam penyusunan Website UPT Puskesmas Kuok. Semoga Website UPT Puskesmas Kuok dapat menyajikan data yang lebih berkualitas.</p>
+        </div>
       </div>
     </div>
   </div>
 </div><!-- End Page Title -->
-
-
 </main>
 
 <?= $this->endSection(); ?>

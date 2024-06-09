@@ -150,7 +150,7 @@
           <div class="icon">
             <i class="fas fa-pills"></i>
           </div>
-          <a href="#" class="stretched-link">
+          <a href="/gd" class="stretched-link">
             <h3>Tindakan Gawat Darurat</h3>
           </a>
           <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
@@ -162,7 +162,7 @@
           <div class="icon">
             <i class="fas fa-hospital-user"></i>
           </div>
-          <a href="#" class="stretched-link">
+          <a href="/tm" class="stretched-link">
             <h3>Tindakan Medik</h3>
           </a>
           <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
@@ -174,11 +174,11 @@
           <div class="icon">
             <i class="fas fa-dna"></i>
           </div>
-          <a href="#" class="stretched-link">
+          <a href="/kb" class="stretched-link">
             <h3>Kebidanan dan Neonatal</h3>
           </a>
           <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-          <a href="#" class="stretched-link"></a>
+          <a href="/kb" class="stretched-link"></a>
         </div>
       </div><!-- End Service Item -->
 
@@ -187,11 +187,11 @@
           <div class="icon">
             <i class="fas fa-notes-medical"></i>
           </div>
-          <a href="#" class="stretched-link">
+          <a href="/dg" class="stretched-link">
             <h3>Pelayanan Diagnostik Elektromedik</h3>
           </a>
           <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-          <a href="#" class="stretched-link"></a>
+          <a href="/dg" class="stretched-link"></a>
         </div>
       </div><!-- End Service Item -->
 
@@ -200,11 +200,11 @@
           <div class="icon">
             <i class="fas fa-wheelchair"></i>
           </div>
-          <a href="#" class="stretched-link">
+          <a href="/lk" class="stretched-link">
             <h3>Pelayanan Laboratorium Klinik</h3>
           </a>
           <p>Pelayanan Laboratorium Klinik (Hematologi, Kimia Klinik, Imunologi, Parasitologi, Mikrobiologi, Urinalisa)</p>
-          <a href="#" class="stretched-link"></a>
+          <a href="/lk" class="stretched-link"></a>
         </div>
       </div><!-- End Service Item -->
 
@@ -213,11 +213,11 @@
           <div class="icon">
             <i class="fas fa-notes-medical"></i>
           </div>
-          <a href="#" class="stretched-link">
+          <a href="/pk" class="stretched-link">
             <h3>Pelayanan Pengujian Kesehatan</h3>
           </a>
           <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-          <a href="#" class="stretched-link"></a>
+          <a href="pk" class="stretched-link"></a>
         </div>
       </div>
 
@@ -239,11 +239,11 @@
           <div class="icon">
             <i class="fas fa-notes-medical"></i>
           </div>
-          <a href="#" class="stretched-link">
+          <a href="/am" class="stretched-link">
             <h3>Ambulance / Puskesmas Keliling dan Jenazah</h3>
           </a>
           <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-          <a href="#" class="stretched-link"></a>
+          <a href="/am" class="stretched-link"></a>
         </div>
       </div><!-- End Service Item -->
     </div>

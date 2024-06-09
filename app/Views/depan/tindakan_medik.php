@@ -7,7 +7,7 @@
     <div class="container">
       <div class="row d-flex justify-content-center ">
         <div class="col-md-12">
-          <p class="text-center"><img style="width: 50%;" src="<?= base_url(); ?>/gambar/rawat_jalan.jpg" alt=""></p>
+          <p class="text-center"><img style="width: 50%;" src="<?= base_url(); ?>/gambar/tindakan_medik.jpg" alt=""></p>
         </div>
       </div>
     </div>

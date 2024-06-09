@@ -6,8 +6,8 @@
   <div class="heading">
     <div class="container">
       <div class="row d-flex justify-content-center ">
-        <div class="col-md-12">
-          <p class="text-center"><img style="width: 50%;" src="<?= base_url(); ?>/gambar/rawat_jalan.jpg" alt=""></p>
+        <div class="col-md-12 mb-4">
+          <p class="text-center"><img style="width: 50%;" src="<?= base_url(); ?>/gambar/diagnostik.jpg" alt=""></p>
         </div>
       </div>
     </div>
