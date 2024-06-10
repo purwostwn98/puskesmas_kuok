@@ -25,3 +25,14 @@ $routes->post('/surekom/submit-data-pemohon', 'SuratRekomendasi::submit_data_pem
 $routes->post('/surekom/dinamis/load_formsyarat', 'SuratRekomendasi::dinamis_load_formsyarat');
 $routes->post('/surekom/cek-ajuan', 'SuratRekomendasi::cek_ajuan');
 $routes->get('/surekom/edit-ajuan', 'SuratRekomendasi::v_edit_ajuan');
+
+// Admin
+$routes->get('/admin/dashboard', 'Admin::index');
+$routes->get('/admin/rekomendasi-ajuanbaru', 'Admin::rekomendasi_ajuanbaru');
+$routes->get('/admin/rekomendasi-detail-ajuan', 'Admin::rekomendasi_detailajuan');
+$routes->get('/admin/rekomendasi-dalamproses', 'Admin::rekomendasi_dalamproses');
+$routes->get('/admin/rekomendasi-toapprove', 'Admin::rekomendasi_toapprove');
+$routes->get('/admin/rekomendasi-disetujui', 'Admin::rekomendasi_disetujui');
+$routes->get('/admin/rekomendasi-ditolak', 'Admin::rekomendasi_ditolak');
+//pdf
+$routes->get('/admin/pdf-apotik', 'Admin::pdf_apotik');
