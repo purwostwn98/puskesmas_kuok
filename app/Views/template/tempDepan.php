@@ -126,7 +126,7 @@
                     </ul>
                     <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
                 </nav>
-                <a class="cta-btn d-none d-sm-block" href="#appointment">Login</a>
+                <button class="cta-btn d-none d-sm-block" onclick="loginBtn()">Login</button>
             </div>
 
         </div>
@@ -208,6 +208,8 @@
 
     </footer>
 
+
+
     <!-- Scroll Top -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -218,8 +220,8 @@
     <!-- Latest compiled and minified CSS -->
 
     <!-- Popper JS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="<?= base_url(); ?>/assetsdepan/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -233,6 +235,32 @@
 
     <!-- Main JS File -->
     <script src="<?= base_url(); ?>/assetsdepan/js/main.js"></script>
+    <div class="html_login"></div>
+    <script>
+        function loginBtn() {
+            $.ajax({
+                url: "<?= site_url('auth/load_modal_login'); ?>",
+                type: "POST",
+                dataType: "json",
+                data: {
+                    id: "id"
+                },
+                success: function(response) {
+                    $(".html_login").html(response.modal);
+                    $("#modalLogin").modal("show");
+                },
+                error: function(xhr, ajaxOptions, thrownError) {
+                    alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
+                }
+            });
+        }
+
+        function closeLogin() {
+            $("#modalLogin").modal("hide");
+        }
+    </script>
+
+
 
 </body>
 

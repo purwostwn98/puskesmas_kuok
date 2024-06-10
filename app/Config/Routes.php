@@ -36,3 +36,8 @@ $routes->get('/admin/rekomendasi-disetujui', 'Admin::rekomendasi_disetujui');
 $routes->get('/admin/rekomendasi-ditolak', 'Admin::rekomendasi_ditolak');
 //pdf
 $routes->get('/admin/pdf-apotik', 'Admin::pdf_apotik');
+
+//auth
+$routes->post('/auth/load_modal_login', 'Auth::load_modal_login');
+$routes->post('/auth/proses', 'Auth::proses_login');
+$routes->get('/logout', 'Auth::logout');

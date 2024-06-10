@@ -124,7 +124,7 @@
 
                                     <div class="dropdown-divider brc-primary-l2"></div>
 
-                                    <a class="dropdown-item btn btn-outline-grey btn-h-lighter-secondary btn-a-lighter-secondary" href="html/page-login.html">
+                                    <a class="dropdown-item btn btn-outline-grey btn-h-lighter-secondary btn-a-lighter-secondary" href="/logout">
                                         <i class="fa fa-power-off text-warning-d1 text-105 mr-1"></i>
                                         Logout
                                     </a>
@@ -203,7 +203,7 @@
                                 <b class="sub-arrow"></b>
                             </li>
                             <li class="nav-item <?= $hal[0] == 'ajuan-rekomendasi' ? 'active open' : ''; ?>">
-                                <a href="#" class="nav-link dropdown-toggle">
+                                <a href="/admin/rekomendasi-ajuanbaru" class="nav-link dropdown-toggle">
                                     <i class="nav-icon fa fa-cube"></i>
                                     <span class="nav-text fadeable">
                                         <span>Ajuan Rekomendasi</span>
@@ -266,7 +266,7 @@
                                         <i class="fa fa-cog text-150"></i>
                                     </a>
 
-                                    <a href="html/page-login.html" class="btn btn-outline-white border-0 p-2 mr-1" title="Logout">
+                                    <a href="/logout" class="btn btn-outline-white border-0 p-2 mr-1" title="Logout">
                                         <i class="fa fa-sign-out-alt text-150"></i>
                                     </a>
                                 </div>
