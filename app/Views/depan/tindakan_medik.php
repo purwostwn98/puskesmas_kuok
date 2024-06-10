@@ -15,6 +15,4 @@
 </div><!-- End Page Title -->
 
 
-</main>
-
 <?= $this->endSection(); ?>

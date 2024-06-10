@@ -217,7 +217,7 @@
             <h3>Pelayanan Pengujian Kesehatan</h3>
           </a>
           <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-          <a href="pk" class="stretched-link"></a>
+          <a href="/pk" class="stretched-link"></a>
         </div>
       </div>
 
@@ -226,11 +226,11 @@
           <div class="icon">
             <i class="fas fa-pills"></i>
           </div>
-          <a href="#" class="stretched-link">
+          <a href="/surat-rekomendasi" class="stretched-link">
             <h3>Penerbitan Surat Rekomendasi</h3>
           </a>
           <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-          <a href="#" class="stretched-link"></a>
+          <a href="/surat-rekomendasi" class="stretched-link"></a>
         </div>
       </div><!-- End Service Item -->
 

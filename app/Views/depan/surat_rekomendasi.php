@@ -34,7 +34,7 @@
                                             <div class="tab-pane <?= $key == 0 ? 'active show' : ''; ?>" id="departments-tab-<?= $key + 1; ?>">
                                                 <div class="row">
                                                     <div class="col-lg-12 details order-2 order-lg-1">
-                                                        <h3>Syarat</h3>
+                                                        <h3>Syarat Rekomendasi <?= $v['nama_surat']; ?></h3>
                                                         <?php if (!empty($syarat[$v['id']])) { ?>
                                                             <ol class="text-secondary">
                                                                 <?php foreach ($syarat[$v['id']] as $ksy => $sy) { ?>
@@ -50,34 +50,6 @@
                                                 </div>
                                             </div>
                                         <?php  } ?>
-
-                                        <!-- <div class="tab-pane" id="departments-tab-2">
-                                            <div class="row">
-                                                <div class="col-lg-12 details order-2 order-lg-1">
-                                                    <h3>Misi</h3>
-                                                    <p>
-                                                    <ol>
-                                                        <li>Mewujudkan pembangunan nilai budaya masyarakat Kampar yang menjamin sistem bermasyarakat dan bernegara untuk menghadapi tantangan global.</li>
-                                                        <li>Meningkatkan manajemen dan kemampuan aparatur dalam mengelola aset daerah dan pelayanan masyarakat.</li>
-                                                        <li>Meningkatkan kualitas sumber daya manusia yang sehat, taat hukum, mengusai ilmu pengetahuan, teknologi, dan beriman, bertaqwa yang berwawasan ke depan.</li>
-                                                        <li>Menegembangkan ekonomi rakyat yang berbasis pada sumber daya lokal dengan orientasi pada agribisnis, agroindustry, dan pariwisata serta mendorong pertumbuhan investasi secara terpadu dan terkait antara swasta, masyarakat, dan pemerintah yang berskala local, regional, nasional maupun internasional.</li>
-                                                        <li>Mewujudkan pembangunan kawasan seimbang yang dapat menjadi kualitas hidup secara berkesinambungan.</li>
-                                                    </ol>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane" id="departments-tab-3">
-                                            <div class="row">
-                                                <div class="col-lg-8 details order-2 order-lg-1">
-                                                    <h3>Tujuan Umum</h3>
-                                                    <p>“Mewujudkan kinerja Puskesmas yang berkualitas secara optimal untung mendukung pencapaian pembangunan kesehatan, dengan mengoptimalkan sumber daya yang ada dan mengaktifkan peran serta masyarakat dan keluarga”</p>
-                                                </div>
-                                                <div class="col-lg-4 text-center order-1 order-lg-2">
-                                                    <img src="<?= base_url(); ?>/assetsdepan/img/departments-3.jpg" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -87,16 +59,125 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <p class="text-center">Pengajuan surat rekomendasi secara online dapat dilakukan dengan klik tombol "Ajukan Surat Rekomendasi" di bawah ini <br> <button class="btn btn-info">Ajukan Surat Rekomendasi</button></p>
+                    <p class="text-center">
+                        Pengajuan surat rekomendasi secara online dapat dilakukan dengan klik tombol "Ajukan Surat Rekomendasi" di bawah ini <br>
+                        <button type="button" style="background-color: var(--accent-color);" class="btn text-white" data-toggle="modal" data-target="#myModal">Ajukan Surat Rekomendasi</button>
+                    </p>
                     <br>
-                    <p class="text-center">Status Surat Tugas yang telah diajukan dapat dilihat dengan klik tombol "Lihat Status Surat" di bawah ini <br> <button class="btn btn-secondary">Lihat Status Surat</button></p>
+                    <p class=" text-center">
+                        Status Surat Tugas yang telah diajukan dapat dilihat dengan klik tombol "Lihat Status Surat" di bawah ini <br>
+                        <button data-toggle="modal" data-target="#modalCekAjuan" class="btn btn-info text-white">Lihat Status Surat</button>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </div><!-- End Page Title -->
 
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
 
-</main>
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">NIK Pemohon</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <?= form_open("/surekom/cek-nik-pemohon", ['class' => 'g-3 needs-validation formnik']); ?>
+            <?= csrf_field(); ?>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <input type="text" name="nik_pemohon" class="form-control" id="nik" placeholder="Masukkan NIK Pemohon" required>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <div class="text-center"><button type="submit" style="background-color: var(--accent-color);" class="btn text-white btndaftar">Submit</button></div>
+            </div>
+            <?= form_close(); ?>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Data Pemohon -->
+<div class="modal fade" id="modalCekAjuan" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Lihat Status Ajuan</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <?= form_open("/surekom/cek-ajuan", ['class' => 'g-3 needs-validation formajuan']); ?>
+            <?= csrf_field(); ?>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <input type="text" name="nik_pemohon" class="form-control" id="nik" placeholder="Masukkan NIK Pemohon" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <input type="text" name="kode_ajuan" class="form-control" id="kode" placeholder="Masukkan Kode Ajuan" required>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <div class="text-center"><button type="submit" style="background-color: var(--accent-color);" class="btn text-white btndaftar">Submit</button></div>
+            </div>
+            <?= form_close(); ?>
+        </div>
+    </div>
+</div>
+<!-- jQuery library -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function() {
+        $('.formnik').submit(function(e) {
+            e.preventDefault();
+            $.ajax({
+                type: "post",
+                url: $(this).attr('action'),
+                data: $(this).serialize(),
+                dataType: "json",
+                beforeSend: function() {
+                    $('.btndaftar').prop('disabled', true);
+                    $('.btndaftar').html('<i class="fa fa-spin fa-spinner"></i>');
+                },
+                complete: function() {
+                    $('.btndaftar').prop('disabled', false);
+                    $('.btndaftar').html('Submit');
+                },
+                success: function(response) {
+                    if (response.berhasil == true) {
+                        window.location = response.link;
+                    }
+                    // if (response.terdaftar) {
+                    //     window.location = response.terdaftar.link_form_ajuan;
+                    // }
+                    $("input[name='csrf_test_name']").val(response.token);
+                },
+                error: function(xhr, ajaxOptions, thrownError) {
+                    alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
+                }
+            });
+
+            return false;
+        });
+    });
+</script>
 
 <?= $this->endSection(); ?>
