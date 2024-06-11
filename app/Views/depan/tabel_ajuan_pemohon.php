@@ -13,7 +13,7 @@
             <div class="row mt-3">
                 <div class="col-md-12">
                     <table class="table table-striped table-bordered">
-                        <thead class="thead-dark">
+                        <thead class="bg-primary text-white">
                             <tr>
                                 <th scope="col">#</th>
                                 <th scope="col">Jenis Surat</th>

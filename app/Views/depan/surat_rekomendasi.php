@@ -104,6 +104,42 @@
         </div>
     </div>
 </div>
+
+<div class="modal fade" id="modalCekAjuan" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Lihat Status Ajuan</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <?= form_open("/surekom/cek-ajuan", ['class' => 'g-3 needs-validation formkodeajuan']); ?>
+            <?= csrf_field(); ?>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <input type="text" name="nik_pemohon" class="form-control" id="nik" placeholder="Masukkan NIK Pemohon" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <input type="text" name="kode_ajuan" class="form-control" id="kode_ajuan" placeholder="Masukkan Kode Ajuan" required>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <div class="text-center"><button type="submit" style="background-color: var(--accent-color);" class="btn text-white btndaftar">Submit</button></div>
+            </div>
+            <?= form_close(); ?>
+        </div>
+    </div>
+</div>
 <!-- jQuery library -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 

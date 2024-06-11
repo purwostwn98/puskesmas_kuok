@@ -9,8 +9,8 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="<?= base_url(); ?>/assetsdepan/img/favicon.png" rel="icon">
-    <link href="<?= base_url(); ?>/assetsdepan/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="<?= base_url(); ?>/assetsdepan/img/logo_puskesmas.png" rel="icon">
+    <link href="<?= base_url(); ?>/assetsdepan/img/logo_puskesmas.png" rel="apple-touch-icon">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect">
